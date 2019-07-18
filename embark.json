@@ -1,0 +1,22 @@
+{
+  "contracts": ["contracts/**"],
+  "app": {
+    "js/app.js": ["app/js/index.js"],
+    "index.html": "app/index.html"
+  },
+  "buildDir": "dist/",
+  "config": "config/",
+  "versions": {
+    "web3": "1.0.0-beta",
+    "solc": "0.4.25",
+    "ipfs-api": "17.2.4"
+  },
+  "plugins": {
+  },
+  "options": {
+    "solc": {
+      "optimize": true,
+      "optimize-runs": 200
+    }
+  }
+}
