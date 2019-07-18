@@ -7,6 +7,10 @@ chat room web app i made with orbit-db and embarkjs (also uses react, redux, and
 - try https://gateway.pinata.cloud/ipfs/QmSmyfcCqhDWupFL1PkP3gRxQv85eAvVc1uhhiWjZDBLKc/index.html or another gateway if that other link doesnt work
 
 ### build
+install embark globally
+```
+npm install -g embark@4.0.2
+```
 ```
 npm install
 embark run
