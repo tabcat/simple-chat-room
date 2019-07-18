@@ -1,0 +1,9 @@
+.embark/
+node_modules/
+dist/
+config/production/password
+config/livenet/password
+config/testnet/password
+config/privatenet/password
+chains.json
+embarkArtifacts/
