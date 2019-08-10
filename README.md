@@ -3,8 +3,8 @@
 chat room web app i made with orbit-db and embarkjs (also uses react, redux, and redux-observable (rxjs))
 
 ### live instance: 
-- https://bafybeicb5oz5zkutcutdhjgch2lixlulvnbjxt2lb3ukkecdrk5p3nzegm.cf-ipfs.com/
-- try https://bafybeicb5oz5zkutcutdhjgch2lixlulvnbjxt2lb3ukkecdrk5p3nzegm.cf-ipfs.com/index.html or another gateway if that other link doesnt work
+- https://bafybeihdlitw6iplec4swwscdbtttbqooc6dgxwtn6flg57gd5bluqekym.cf-ipfs.com/
+- try https://bafybeihdlitw6iplec4swwscdbtttbqooc6dgxwtn6flg57gd5bluqekym.cf-ipfs.com/index.html or another gateway if that other link doesnt work
 
 ### build
 install embark globally
