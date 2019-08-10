@@ -1,6 +1,6 @@
 #### this repo is deprecated
 # simple-chat-room
-chat room web app i made with orbit-db and embarkjs (also uses react, redux, and redux-observable (rxjs))
+chat room web app made with orbit-db and embarkjs (also uses react, redux, and redux-observable (rxjs))
 
 ### live instance: 
 - https://bafybeihdlitw6iplec4swwscdbtttbqooc6dgxwtn6flg57gd5bluqekym.cf-ipfs.com/
