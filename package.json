@@ -1,13 +1,13 @@
 {
-  "name": "Unnamed",
-  "version": "0.0.1",
-  "description": "",
+  "name": "simple-chat-room",
+  "version": "1.0.0",
+  "description": "simple public chat room web app over orbit-db",
+	"target": "web",
   "scripts": {
     "test": "embark test"
   },
-  "author": "",
-  "license": "ISC",
-  "homepage": "",
+  "author": "andersb@tuta.io",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.3.4",
     "@babel/plugin-proposal-class-properties": "^7.3.4",
