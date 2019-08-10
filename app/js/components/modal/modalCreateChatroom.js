@@ -43,6 +43,7 @@ const chatRoomNavItemConfig = (modalState) => {
 class ModalCreateChatroom extends React.Component {
 
   updateField = (field, value) => {
+
     const { modalType, setModalTypeFields } = this.props
     const changes = { [field]: value }
     setModalTypeFields(modalType, changes)
@@ -57,11 +58,17 @@ class ModalCreateChatroom extends React.Component {
     modalConfirm(modalAction)
   }
 
+  handleEnter = (field, event) => {
+    this.updateField(field, event.target.value)
+    if (event.keyCode == 13 && event.target.value !== "" ) {
+      this.confirm()
+    }
+  }
+
   render() {
     const { classes, modalReject } = this.props
 
     const form =
-    <form>
       <TextField
          label="Topic*"
          style={{ margin: 8 }}
@@ -71,19 +78,8 @@ class ModalCreateChatroom extends React.Component {
          helperText="channel id: put 'ethereum' or 'ipfs' or 'anything here,
           it doesnt really matter unless you want to talk to other people
           then you have to coordinate or pick something common'."
-         onChange={event => this.updateField('channel', event.target.value)}
+         onKeyUp={event => this.handleEnter('channel', event)}
        />
-      <TextField
-         label="Write Access (optional)"
-         style={{ margin: 8 }}
-         fullWidth
-         margin="normal"
-         variant="outlined"
-         helperText="specify orbit public keys separated by comma.
-          defaults to * meaning anyone can send messages."
-         onChange={event => this.updateField('write', event.target.value)}
-       />
-    </form>
 
     return (
       <>
