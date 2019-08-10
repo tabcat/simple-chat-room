@@ -126,7 +126,8 @@ const orbitDbEpic = action$ => action$.pipe(
 
 const dropDbOrbit = async (orbitInstance, orbitAddr) => {
   try {
-    await orbitInstance.stores[orbitAddr].drop()
+    const db = orbitInstance.stores[orbitAddr]
+    if (db) await db.drop
   } catch(e) {
     console.error(e)
   }
